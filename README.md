@@ -7,7 +7,7 @@ By running those commands you'll install build and start the app at _http://loca
 
 ```
 npm install
-npm node-server-all
+npm run node-server-all
 ```
 
 ### Run e2e tests
