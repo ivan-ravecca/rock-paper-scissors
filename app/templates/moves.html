@@ -1,0 +1,23 @@
+<div class="moves">
+	<ul class="margin-left">
+		<li>
+			<span>{{currentPlayer.name}}</span>
+		</li>
+		<li>
+			<div class="btn-group move-options" data-toggle="buttons">
+				<label class="btn btn-default fa fa-hand-rock-o" ng-class="{active: option === 'rock'}" title="Rock">
+					<input type="radio" ng-model="option" ng-check="{{option === 'rock'}}" value="rock">
+				</label>
+				<label class="btn btn-default fa fa-hand-paper-o" ng-class="{active: option === 'paper'}" title="Paper">
+					<input type="radio" ng-model="option" ng-check="{{option === 'paper'}}" value="paper" />
+				</label>
+				<label class="btn btn-default fa fa-hand-scissors-o" ng-class="{active: option === 'scissors'}" title="Scissors">
+					<input type="radio" ng-model="option" ng-check="{{option === 'scissors'}}" value="scissors">
+				</label>
+			</div>
+		</li>
+		<li>
+			<button type="button" ng-disabled="!hasSelected" ng-class="{disabled: !hasSelected}" class="btn btn-sm btn-block btn-success" ng-click="select()" ng-keypress="($event.which === 13)? select() : null">Ok</button>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,71 @@
+/* app css stylesheet */
+
+/* Generic rules */
+footer{
+	clear: both;
+	font-size: 0.7vw;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.col-centered{
+	margin: 0 auto;
+	float: none;
+}
+
+.li-row-flex {
+	display: flex;
+}
+
+.div-col-flex{
+	flex: 0 1 auto;
+}
+
+.margin-left{
+	margin-left: 5%;
+}
+
+/* Specific rules for Entry/landing page */
+.entry li{
+	max-width: 251px;
+}
+
+/* Specific rules for score section */
+.score .li-row-flex div:first-child{
+	width: 90px;
+}
+
+.score ul li:nth-child(even){
+	background: rgba(232, 232, 232, 0.6);
+}
+
+/* Specific rules for moves component */
+.moves .move-options{
+	display: flex;
+	justify-content: space-between;
+	margin: 5% 0 5% 0;
+}
+
+.moves span{
+	font-size: 1.5vw;
+}
+
+.moves .move-options label{
+	font-size: 4vw;
+	margin-right: 5%;
+	flex: 0 1 auto;
+}
+
+/* Specific rules for winner view */
+.winner h2{
+	font-size: 4vw;
+}
+
+.winner span{
+	font-size: 2vw;
+	margin: 5% 0 5% 0;
+	font-style: italic;
+}

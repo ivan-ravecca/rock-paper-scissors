@@ -1,0 +1,16 @@
+<div class="col-xs-6 col-md-6 color2 score">
+	<h2>Score</h2>
+	<ul class="panel panel-default margin-left">
+		<li class="li-row-flex panel-heading">
+			<div class="div-col-flex">Round</div>
+			<div class="div-col-flex">Winner</div>
+		</li>
+		<li ng-repeat="round in rounds" class="li-row-flex panel-body">
+			<div class="div-col-flex">{{round.stage}}</div>
+			<div class="div-col-flex">{{round.winnerExist ? round.player.name : 'Even'}}</div>
+		</li>
+		<li ng-if="rounds.length === 0">
+			<div class="div-col-flex">Nobody has played yet</div>
+		</li>
+	</ul>
+</div>
